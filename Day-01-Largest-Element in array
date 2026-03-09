@@ -1,0 +1,16 @@
+# Day 1 - Largest Element in Array
+
+# Approaches learned:
+# 1. Brute Force: Sort the array and take the last element (O(n log n))
+# 2. Better: Traverse the array and track maximum (O(n))
+# 3. Optimal: Single pass comparison (O(n))  <-- implemented below
+
+arr = [10, 5, 20, 8]
+
+largest = arr[0]
+
+for i in arr:
+    if i > largest:
+        largest = i
+
+print("Largest element:", largest)
